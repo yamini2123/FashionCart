@@ -103,9 +103,12 @@ http://localhost:3000
 ```
 
 ---
-
 ### Home Page
 ![Home Page](image.png)
+### Cart page
+![Cart page](image-1.png)
+### Checkout page 
+![Checkout](image-2.png)
 # 👩‍💻 Author
 
 **Yamini**
