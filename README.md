@@ -104,29 +104,8 @@ http://localhost:3000
 
 ---
 
-# 📸 Screenshots
-
-You can add project screenshots here later.
-
-Example:
-- Home Page
-- Cart Page
-- Checkout Page
-- Orders Page
-
----
-
-# 🔮 Future Improvements
-
-- User Authentication
-- Online Payment Gateway
-- Admin Dashboard
-- Product Reviews
-- Wishlist Feature
-- Deployment using Render / Vercel
-
----
-
+### Home Page
+![Home Page](image.png)
 # 👩‍💻 Author
 
 **Yamini**
