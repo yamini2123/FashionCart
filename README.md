@@ -63,7 +63,7 @@ FashionCart
 │
 ├── README.md
 └── .gitignore
- How to Run the Project
+⚙️ How to Run the Project
 1️⃣ Clone Repository
 git clone https://github.com/yamini2123/FashionCart.git
 2️⃣ Open Project Folder
