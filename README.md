@@ -4,8 +4,6 @@ A clothing-based Fashion eCommerce web application built using HTML, CSS, JavaSc
 
 This project allows users to browse fashion products, add items to the cart, manage quantities, place orders, and view order history through a clean and responsive user interface.
 
----
-
 # 🚀 Features
 
 - Stylish and responsive fashion UI
@@ -21,7 +19,7 @@ This project allows users to browse fashion products, add items to the cart, man
 - MongoDB database integration
 - Backend API using Express.js
 
----
+
 
 # 🛠 Technologies Used
 
@@ -37,7 +35,7 @@ This project allows users to browse fashion products, add items to the cart, man
 ## Database
 - MongoDB
 
----
+
 
 # 📂 Project Structure
 
@@ -65,52 +63,27 @@ FashionCart
 │
 ├── README.md
 └── .gitignore
-```
-
----
-
-# ⚙️ How to Run the Project
-
-## 1️⃣ Clone Repository
-
-```bash
+ How to Run the Project
+1️⃣ Clone Repository
 git clone https://github.com/yamini2123/FashionCart.git
-```
-
-## 2️⃣ Open Project Folder
-
-```bash
+2️⃣ Open Project Folder
 cd FashionCart
-```
-
-## 3️⃣ Install Backend Dependencies
-
-```bash
+3️⃣ Install Backend Dependencies
 cd Backend
 npm install
-```
-
-## 4️⃣ Start the Server
-
-```bash
+4️⃣ Start the Server
 node server.js
-```
-
-## 5️⃣ Open in Browser
-
-```bash
+5️⃣ Open in Browser
 http://localhost:3000
-```
 
----
 ### Home Page
 ![Home Page](image.png)
 ### Cart page
 ![Cart page](image-1.png)
 ### Checkout page 
 ![Checkout](image-2.png)
-# 👩‍💻 Author
 
-**Yamini**
 
+👩‍💻 Author
+Yamini
 GitHub: https://github.com/yamini2123
