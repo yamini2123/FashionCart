@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FashionCart</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <style>
+
+        /* Navbar */
+        nav{
+            background-color: black;
+            color: white;
+            padding: 15px;
+
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        nav ul{
+            display: flex;
+            gap: 20px;
+            list-style: none;
+        }
+
+        nav a{
+            color: white;
+            text-decoration: none;
+        }
+
+        /* Hero Section */
+        .hero{
+            text-align: center;
+            padding: 40px;
+        }
+
+        /* Search Bar */
+        .search-box{
+            text-align: center;
+            margin: 20px;
+        }
+
+        .search-box input{
+            width: 300px;
+            padding: 12px;
+            border-radius: 8px;
+            border: 1px solid gray;
+            font-size: 16px;
+        }
+
+        /* Filter Buttons */
+        .filter-buttons{
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        .filter-buttons button{
+            margin: 5px;
+        }
+
+        /* Products Layout */
+       
+
+        /* Product Card */
+        .product-card{
+            width: 180px;
+
+            background-color: white;
+
+            border-radius: 10px;
+
+            padding: 15px;
+
+            text-align: center;
+
+            box-shadow: 0px 0px 10px rgba(0,0,0,0.1);
+
+            flex-shrink: 0;
+        }
+
+        /* Product Image */
+        .product-card img{
+            width: 150px;
+            height: 180px;
+
+            object-fit: cover;
+
+            border-radius: 10px;
+        }
+
+        /* Buttons */
+        button{
+            background-color: black;
+            color: white;
+
+            border: none;
+
+            padding: 10px 15px;
+
+            border-radius: 5px;
+
+            cursor: pointer;
+        }
+
+        button:hover{
+            background-color: gray;
+        }
+
+        /* Scrollbar */
+        .products::-webkit-scrollbar {
+            height: 8px;
+        }
+
+        .products::-webkit-scrollbar-thumb {
+            background: gray;
+            border-radius: 10px;
+        }
+
+        /* Footer */
+        footer{
+            background-color: black;
+            color: white;
+
+            text-align: center;
+
+            padding: 15px;
+
+            margin-top: 30px;
+        }
+
+    </style>
+
+</head>
+<body>
+
+    <!-- Navbar -->
+    <nav>
+
+        <h1>FashionCart</h1>
+
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Products</a></li>
+            <li><a href="cart.html">Cart 🛒</a></li>
+            <li><a href="orders.html">Orders 📦</a></li>
+        </ul>
+
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero">
+
+        <h2>Discover Your Style</h2>
+
+        <p>Latest Fashion Collection 2026</p>
+
+        <button>Shop Now</button>
+
+    </section>
+
+    <!-- Search Bar -->
+    <div class="search-box">
+
+        <input 
+            type="text" 
+            id="search"
+            placeholder="Search products..."
+        >
+
+    </div>
+
+    <!-- Filter Buttons -->
+    <div class="filter-buttons">
+
+        <button onclick="filterProduct('all')">
+            All
+        </button>
+
+        <button onclick="filterProduct('hoodie')">
+            Hoodies
+        </button>
+
+        <button onclick="filterProduct('jeans')">
+            Jeans
+        </button>
+
+        <button onclick="filterProduct('kurti')">
+            Kurtis
+        </button>
+
+        <button onclick="filterProduct('saree')">
+            Sarees
+        </button>
+
+    </div>
+
+    <!-- Products -->
+    <section class="products" id="products"></section>
+
+    <!-- Footer -->
+    <footer>
+
+        <p>© 2026 FashionCart. All Rights Reserved.</p>
+
+    </footer>
+
+    <script src="script.js"></script>
+
+</body>
+</html>

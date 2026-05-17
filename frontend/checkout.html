@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Checkout</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <h1 style="text-align:center;">
+        Checkout 💳
+    </h1>
+
+    <div style="width:300px; margin:auto;">
+
+        <input type="text" id="name" placeholder="Enter Name" class="input-box">
+
+        <input type="text" id="address" placeholder="Enter Address" class="input-box">
+
+        <input type="text" id="phone" placeholder="Enter Phone Number" class="input-box">
+
+        <h2 id="finalTotal"></h2>
+
+        <button onclick="placeOrder()" style="width:100%;">
+           <h3>Select Payment Method</h3>
+
+<div style="margin-bottom:20px;">
+    <label>
+        <input type="radio" name="payment" value="Cash on Delivery">
+        Cash on Delivery
+    </label>
+
+    <br><br>
+
+    <label>
+        <input type="radio" name="payment" value="UPI">
+        UPI
+    </label>
+
+    <br><br>
+
+    <label>
+        <input type="radio" name="payment" value="Card">
+        Debit / Credit Card
+    </label>
+</div>
+
+<button onclick="placeOrder()" style="width:100%;">
+    Place Order
+</button>
+    </div>
+
+    <script src="checkout.js"></script>
+
+</body>
+</html>

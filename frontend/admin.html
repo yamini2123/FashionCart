@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Admin Panel - Add Product</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <nav>
+        <h1>Admin Panel</h1>
+    </nav>
+
+    <div style="text-align:center; margin-top:30px;">
+
+        <h2>Add New Product</h2>
+
+        <input class="input-box" id="name" placeholder="Product Name">
+        <input class="input-box" id="price" placeholder="Price">
+        <input class="input-box" id="image" placeholder="Image URL (/images/img.jpg)">
+        <input class="input-box" id="category" placeholder="Category">
+
+        <button onclick="addProduct()">Add Product</button>
+
+        <p id="msg"></p>
+
+    </div>
+
+<script>
+
+async function addProduct(){
+
+    const product = {
+        name: document.getElementById("name").value,
+        price: document.getElementById("price").value,
+        image: document.getElementById("image").value,
+        category: document.getElementById("category").value
+    };
+
+    const res = await fetch("http://localhost:3000/add-product", {
+        method: "POST",
+        headers: {
+            "Content-Type": "application/json"
+        },
+        body: JSON.stringify(product)
+    });
+
+    const data = await res.json();
+
+    document.getElementById("msg").innerText = data.message;
+
+}
+
+</script>
+
+</body>
+</html>
